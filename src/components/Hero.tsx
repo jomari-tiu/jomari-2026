@@ -43,9 +43,8 @@ function useGeometry() {
     const total_len = lens.reduce((a, b) => a + b, 0);
     const starts = lens.map((_, i) => lens.slice(0, i).reduce((a, b) => a + b, 0));
     const route = `M${xs[0]} ${LOW}H${jogStart}L${jogEnd} ${HIGH}H${X_NOW}`;
-    const nowLabel = now.toLocaleDateString("en-US", { month: "short", year: "numeric" });
 
-    return { xs, ys, segs, lens, starts, total_len, route, nowLabel };
+    return { xs, ys, segs, lens, starts, total_len, route };
   }, []);
 }
 
@@ -211,7 +210,6 @@ function Diagram() {
           style={{ left: pct(X_NOW, W), "--y": pct(HIGH + 26, H) } as React.CSSProperties}
         >
           <b>You are here</b>
-          <span>{g.nowLabel}</span>
         </a>
       </div>
 
