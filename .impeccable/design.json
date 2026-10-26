@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T13:41:06.453Z",
+  "title": "Design System: Jomari Tiu, The Line",
+  "extensions": {
+    "colorMeta": {
+      "line-multisys": {
+        "role": "primary",
+        "displayName": "Multisys Line Blue",
+        "canonical": "oklch(44.9% 0.153 261)",
+        "tonalRamp": [
+          "#000729",
+          "#08214f",
+          "#1c3d79",
+          "#325ba5",
+          "#527ece",
+          "#7da5eb",
+          "#a9cbff",
+          "#d4f0ff"
+        ]
+      },
+      "line-lightweight": {
+        "role": "secondary",
+        "displayName": "Lightweight Line Green",
+        "canonical": "oklch(53.3% 0.104 163)",
+        "tonalRamp": [
+          "#001304",
+          "#003017",
+          "#005030",
+          "#006f4d",
+          "#38936f",
+          "#60b993",
+          "#91deba",
+          "#c2ffe1"
+        ]
+      },
+      "line-optimind": {
+        "role": "secondary",
+        "displayName": "Optimind Line Red",
+        "canonical": "oklch(54.5% 0.194 20)",
+        "tonalRamp": [
+          "#220001",
+          "#460810",
+          "#6e2126",
+          "#99393d",
+          "#c25c5e",
+          "#e28787",
+          "#ffb3b1",
+          "#ffdcda"
+        ]
+      },
+      "line-magis": {
+        "role": "tertiary",
+        "displayName": "Magis Line Amber",
+        "canonical": "oklch(75.5% 0.152 78)",
+        "tonalRamp": [
+          "#1a0400",
+          "#3b1b00",
+          "#5e3500",
+          "#845200",
+          "#aa7500",
+          "#ca9c4d",
+          "#ebc486",
+          "#ffe9b8"
+        ]
+      },
+      "enamel": {
+        "role": "neutral",
+        "displayName": "Porcelain Enamel",
+        "canonical": "oklch(95.4% 0.007 132)",
+        "tonalRamp": [
+          "#0a0c09",
+          "#232521",
+          "#3e413d",
+          "#5c5e5a",
+          "#7e817d",
+          "#a3a6a1",
+          "#c9ccc7",
+          "#edf0eb"
+        ]
+      },
+      "enamel-deep": {
+        "role": "neutral",
+        "displayName": "Deep Enamel",
+        "canonical": "oklch(92.2% 0.010 140)",
+        "tonalRamp": [
+          "#090c08",
+          "#222521",
+          "#3d413c",
+          "#5b5f5a",
+          "#7d827c",
+          "#a1a6a0",
+          "#c7ccc6",
+          "#ebf0ea"
+        ]
+      },
+      "sign-face": {
+        "role": "neutral",
+        "displayName": "Sign Face",
+        "canonical": "oklch(98.2% 0.006 128)",
+        "tonalRamp": [
+          "#0a0c09",
+          "#232522",
+          "#3f403d",
+          "#5d5e5b",
+          "#7f817d",
+          "#a3a5a2",
+          "#c9cbc7",
+          "#edefeb"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Blue-Black Ink",
+        "canonical": "oklch(20.8% 0.011 260)",
+        "tonalRamp": [
+          "#090b10",
+          "#212429",
+          "#3c4046",
+          "#5a5e64",
+          "#7c8087",
+          "#a1a5ac",
+          "#c6cbd2",
+          "#eaeff6"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "color-mix(in oklab, var(--ink) 80%, var(--enamel))"
+      },
+      "ink-hair": {
+        "role": "neutral",
+        "displayName": "Hairline Ink",
+        "canonical": "color-mix(in oklab, var(--ink) 16%, var(--enamel))"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name on the hero station sign; the terminus heading is a close sibling."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Station (employer) names and major section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project (stop) names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading copy in soft ink, 52ch to 68ch measure."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Stack chips, sign fact terms, plate counters; sentence case, weight 700."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sign-lift",
+        "value": "0 18px 40px -24px color-mix(in oklab, var(--ink) 55%, transparent)",
+        "purpose": "Station sign panels only (hero and terminus)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "House ease for state transitions, wipes, roundel lighting, terminus dash."
+      },
+      {
+        "name": "state-fast",
+        "value": "160ms",
+        "purpose": "Button and link colour transitions."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) over 120ms",
+        "purpose": "Button active state."
+      },
+      {
+        "name": "roundel-light",
+        "value": "320ms",
+        "purpose": "Spine roundel fills once passed (in view once, -45% bottom margin) and stays lit."
+      },
+      {
+        "name": "plate-wipe",
+        "value": "500ms clip-path inset",
+        "purpose": "Directional screenshot change in project plates."
+      },
+      {
+        "name": "diagram-draw",
+        "value": "2.4s, delay 0.35s, cubic-bezier(0.45, 0, 0.2, 1)",
+        "purpose": "Hero line diagram draws segment by segment while the train rides."
+      },
+      {
+        "name": "strip-train-spring",
+        "value": "stiffness 260, damping 40, mass 0.6",
+        "purpose": "Line strip train following scroll."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "end state, opacity fades only",
+        "purpose": "prefers-reduced-motion shows the finished diagram and swaps wipes for 200ms fades."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "toolkit-stack",
+        "value": "600px"
+      },
+      {
+        "name": "mobile",
+        "value": "720px"
+      },
+      {
+        "name": "stops-stack",
+        "value": "860px"
+      },
+      {
+        "name": "sign-facts-wrap",
+        "value": "1000px"
+      },
+      {
+        "name": "container",
+        "value": "1200px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "Primary action pill: See the work, Email.",
+      "html": "<a class=\"ds-btn-solid\" href=\"#\">See the work</a>",
+      "css": ".ds-btn-solid{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px 10px;border-radius:999px;border:2px solid var(--ink,#15181d);background:var(--ink,#15181d);color:var(--enamel,#eef1ec);font-family:var(--font,'Overpass Variable',Overpass,sans-serif);font-weight:700;font-size:1rem;text-decoration:none;cursor:pointer;transition:background-color 160ms cubic-bezier(0.16,1,0.3,1),border-color 160ms cubic-bezier(0.16,1,0.3,1),transform 120ms cubic-bezier(0.16,1,0.3,1)}.ds-btn-solid:hover{background:var(--line-multisys,#1f4fa8);border-color:var(--line-multisys,#1f4fa8)}.ds-btn-solid:active{transform:scale(0.97)}.ds-btn-solid:focus-visible{outline:3px solid var(--line-multisys,#1f4fa8);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action pill; inverts to ink on hover.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Email me</a>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:12px 22px 10px;border-radius:999px;border:2px solid var(--ink,#15181d);background:transparent;color:var(--ink,#15181d);font-family:var(--font,'Overpass Variable',Overpass,sans-serif);font-weight:700;font-size:1rem;text-decoration:none;transition:background-color 160ms cubic-bezier(0.16,1,0.3,1),color 160ms cubic-bezier(0.16,1,0.3,1),transform 120ms cubic-bezier(0.16,1,0.3,1)}.ds-btn-ghost:hover{background:var(--ink,#15181d);color:var(--enamel,#eef1ec)}.ds-btn-ghost:active{transform:scale(0.97)}.ds-btn-ghost:focus-visible{outline:3px solid var(--line-multisys,#1f4fa8);outline-offset:3px}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "textlink",
+      "description": "Bold link underlined in the section's line colour, with an external arrow.",
+      "html": "<a class=\"ds-textlink\" href=\"#\" style=\"--line:#1e7f5c\">Live demo <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
+      "css": ".ds-textlink{display:inline-flex;align-items:center;gap:6px;font-family:var(--font,'Overpass Variable',Overpass,sans-serif);font-weight:700;color:var(--ink,#15181d);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:0.22em;text-decoration-color:color-mix(in oklab,var(--line,#15181d) 70%,transparent);transition:text-decoration-color 160ms cubic-bezier(0.16,1,0.3,1)}.ds-textlink:hover{text-decoration-color:var(--line,#15181d)}.ds-textlink:focus-visible{outline:3px solid var(--line-multisys,#1f4fa8);outline-offset:3px;border-radius:4px}"
+    },
+    {
+      "name": "Stack Chip",
+      "kind": "chip",
+      "refersTo": "stack-chip",
+      "description": "Informational technology tag on a project stop.",
+      "html": "<ul class=\"ds-chips\"><li>Next.js</li><li>TypeScript</li><li>Tailwind</li></ul>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}.ds-chips li{font-family:var(--font,'Overpass Variable',Overpass,sans-serif);font-size:0.8125rem;font-weight:700;color:var(--ink,#15181d);padding:3px 9px 1px;border-radius:6px;border:1.5px solid color-mix(in oklab,#15181d 16%,#eef1ec)}"
+    },
+    {
+      "name": "Station Sign",
+      "kind": "card",
+      "refersTo": "station-sign",
+      "description": "Enamel sign panel with a current-line band; hero and terminus.",
+      "html": "<div class=\"ds-sign\"><div class=\"ds-sign-body\"><span class=\"ds-sign-roundel\">JT</span><div><h1>Jomari Tiu</h1><p>Frontend engineer, React, Next.js and TypeScript.</p></div></div><div class=\"ds-sign-band\"><a href=\"#\">&larr; Lightweight</a><b>Now at Multisys</b><a href=\"#\">Next station: your team &rarr;</a></div></div>",
+      "css": ".ds-sign{font-family:var(--font,'Overpass Variable',Overpass,sans-serif);background:#f8faf6;color:#15181d;border:2px solid #15181d;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px -24px color-mix(in oklab,#15181d 55%,transparent)}.ds-sign-body{display:flex;gap:24px;align-items:center;padding:32px}.ds-sign-roundel{flex:none;display:grid;place-items:center;width:72px;aspect-ratio:1;border-radius:50%;border:10px solid #1f4fa8;box-sizing:border-box;font-weight:800;font-size:1.2rem;letter-spacing:-0.04em}.ds-sign h1{margin:0;font-size:3rem;font-weight:800;line-height:0.92;letter-spacing:-0.035em}.ds-sign p{margin:10px 0 0;color:color-mix(in oklab,#15181d 80%,#eef1ec)}.ds-sign-band{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;padding:14px 32px 12px;background:#1f4fa8;color:#f8faf6;font-weight:700}.ds-sign-band a{color:inherit;text-decoration:none;font-size:0.9375rem}.ds-sign-band a:last-child{justify-self:end}.ds-sign-band a:hover{text-decoration:underline}.ds-sign-band a:focus-visible{outline:3px solid #f8faf6;outline-offset:3px}"
+    },
+    {
+      "name": "Line Strip",
+      "kind": "nav",
+      "refersTo": "line-strip",
+      "description": "Sticky nav: line-coloured rail, stop rings, riding train marker.",
+      "html": "<nav class=\"ds-strip\"><a class=\"ds-strip-brand\" href=\"#\">Jomari Tiu</a><div class=\"ds-strip-track\"><div class=\"ds-rail\"><span style=\"background:#e3a21a\"></span><span style=\"background:#c8283c\"></span><span style=\"background:#1e7f5c\"></span></div><a class=\"ds-stop\" href=\"#\" style=\"left:0;--line:#e3a21a\"><i></i></a><a class=\"ds-stop\" href=\"#\" style=\"left:33.3%;--line:#c8283c\"><i></i></a><a class=\"ds-stop\" href=\"#\" style=\"left:66.6%;--line:#1e7f5c\"><i></i></a><a class=\"ds-stop\" aria-current=\"true\" href=\"#\" style=\"left:100%;--line:#1f4fa8\"><i></i></a><span class=\"ds-train\" style=\"left:100%\"></span></div></nav>",
+      "css": ".ds-strip{display:flex;align-items:center;gap:32px;height:60px;padding:0 24px;background:color-mix(in oklab,#eef1ec 94%,transparent);border-bottom:1px solid color-mix(in oklab,#15181d 16%,#eef1ec);font-family:var(--font,'Overpass Variable',Overpass,sans-serif)}.ds-strip-brand{font-weight:800;letter-spacing:-0.02em;color:#15181d;text-decoration:none;white-space:nowrap}.ds-strip-track{position:relative;flex:1;height:100%;margin:0 8px}.ds-rail{position:absolute;left:0;right:0;top:50%;height:6px;margin-top:-3px;display:flex;border-radius:3px;overflow:hidden}.ds-rail span{flex:1}.ds-stop{position:absolute;top:50%;translate:-50% -50%;display:grid;place-items:center;width:32px;height:32px}.ds-stop i{width:14px;height:14px;box-sizing:border-box;border-radius:50%;border:3px solid var(--line);background:#eef1ec;transition:background-color 200ms cubic-bezier(0.16,1,0.3,1),scale 200ms cubic-bezier(0.16,1,0.3,1)}.ds-stop:hover i,.ds-stop[aria-current=true] i{background:var(--line)}.ds-stop[aria-current=true] i{scale:1.25}.ds-stop:focus-visible{outline:3px solid #1f4fa8;outline-offset:3px;border-radius:4px}.ds-train{position:absolute;top:50%;width:26px;height:12px;margin:-16px 0 0 -13px;border-radius:6px 6px 3px 3px;background:#15181d}"
+    },
+    {
+      "name": "Spine Stop",
+      "kind": "custom",
+      "refersTo": "roundel",
+      "description": "Project stops on a station spine: hollow ring until passed, then lit.",
+      "html": "<div class=\"ds-spine-demo\" style=\"--line:#1e7f5c\"><span class=\"ds-spine\"><span class=\"ds-spine-fill\"></span></span><span class=\"ds-roundel ds-lit\" style=\"top:14px\"></span><span class=\"ds-roundel\" style=\"top:84px\"></span><div class=\"ds-spine-text\"><h3>Lit stop</h3><h3 style=\"margin-top:44px\">Unreached stop</h3></div></div>",
+      "css": ".ds-spine-demo{position:relative;padding:14px 0 14px 72px;min-height:140px;font-family:var(--font,'Overpass Variable',Overpass,sans-serif);color:#15181d;background:#eef1ec}.ds-spine{position:absolute;top:0;bottom:0;left:24px;width:8px;background:color-mix(in oklab,var(--line) 22%,#eef1ec)}.ds-spine-fill{position:absolute;inset:0 0 50% 0;background:var(--line)}.ds-roundel{position:absolute;left:28px;width:26px;height:26px;margin-left:-13px;box-sizing:border-box;border-radius:50%;border:6px solid var(--line);background:#eef1ec;transition:background-color 320ms cubic-bezier(0.16,1,0.3,1)}.ds-roundel.ds-lit{background:var(--line)}.ds-spine-text h3{margin:0;font-size:1.375rem;font-weight:800;line-height:1.1;letter-spacing:-0.02em}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Line",
+    "overview": "The portfolio is a rapid-transit line diagram and its station signage. A career runs as one line through four stations (Magis, Optimind, Lightweight, Multisys) with each project a stop; the page rides it newest-first from \"Now at Multisys\" back to the depot (university), then out to the terminus (contact). Every visual device comes from that world: enamel sign panels with rounded corners, a coloured band naming the current station, roundels on a vertical spine, a sticky line strip with a train marker, and a diagram drawn on a 90°/45° grid.\n\nThe ground is cool porcelain enamel and the text is blue-black ink. Colour is a wayfinding signal and nothing else: each employer owns one line colour, and that colour appears only where its line is. Density is generous: one column of reading on a long spine, large display type, no card grids. Motion is mechanical and directional (lines draw, a train rides, spines fill, roundels light), never decorative float or bounce.\n\nThe world rejects the centred-name hero over a grid of project cards and the dark neon developer template.",
+    "keyCharacteristics": [
+      "Porcelain-enamel ground, blue-black ink, four line colours; no free greys (secondary ink is a mix of ink into enamel).",
+      "One typeface, Overpass (Highway Gothic lineage), at 800 for headings, 700 for labels and actions, 400 for reading.",
+      "Station signs: 2px ink border, 18px corners, a full-bleed coloured band along the bottom.",
+      "The line as spine: an 8px vertical rail per station, filling with its colour as you scroll, roundels lighting once passed.",
+      "Hollow ring = not yet reached; filled = reached or current. The current station is the loudest mark."
+    ],
+    "rules": [
+      {
+        "name": "The Colour Is A Line Rule",
+        "body": "A line colour appears only on things that belong to that line: its spine, roundels, duty ticks, diagram segment, strip segment, link underlines in its section. Sections set `--line` once and children inherit it; no component picks a line colour on its own. The single sanctioned exception is the current-station blue for focus, caret and solid-button hover.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tint, Not Grey Rule",
+        "body": "Secondary and tertiary neutrals are mixes of ink into enamel (`color-mix(in oklab, ...)`), never a neutral grey value. On the ink-ground Toolkit board the mix inverts (enamel into ink at 78%, 45%, 22%).",
+        "section": "colors"
+      },
+      {
+        "name": "The Unreached Track Rule",
+        "body": "A line's not-yet-travelled state is its own colour at 22% into enamel (spine) or the hairline ink (diagram track), never a different hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Face Rule",
+        "body": "Overpass only. Weight and size carry hierarchy; no second family, no italics for emphasis (emphasis is `strong` in full ink against soft-ink copy).",
+        "section": "typography"
+      },
+      {
+        "name": "The Signage Case Rule",
+        "body": "Labels, station names and band text are set in sentence or title case at weight 700 to 800, never tracked-out uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Spine Rule",
+        "body": "Every station roundel, stop roundel and depot ring centres on `gutter + spine-x`. Nothing on the line floats off that axis.",
+        "section": "layout"
+      },
+      {
+        "name": "The Outline Before Shadow Rule",
+        "body": "A panel, plate or portrait is separated by a 2px ink border. Shadows are reserved for the sign panel.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set `--line` once per station section and let spines, roundels, ticks and underlines inherit it.",
+      "**Do** separate surfaces with 2px ink outlines on enamel; reserve the soft drop shadow for sign panels.",
+      "**Do** draw any new line work on the 90°/45° grid with round caps and the spine axis at `gutter + spine-x`.",
+      "**Do** use hollow rings for unreached stops and filled rings for reached or current ones.",
+      "**Do** keep motion directional and once-only (draw, ride, fill, light) on `cubic-bezier(0.16, 1, 0.3, 1)`, with a reduced-motion path that shows the end state."
+    ],
+    "donts": [
+      "**Don't** use a line colour for anything outside its line (no decorative amber, red or green; blue only for its line and the focus/caret/hover affordance).",
+      "**Don't** introduce neutral greys; derive secondary tones by mixing ink into enamel.",
+      "**Don't** add a second typeface or uppercase tracked labels.",
+      "**Don't** lay projects out as a card grid or put the name centred alone over one; projects are stops on a spine.",
+      "**Don't** go dark-mode neon: the only dark surface is the ink Toolkit board."
+    ]
+  }
+}

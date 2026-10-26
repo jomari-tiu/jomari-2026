@@ -1,0 +1,78 @@
+import type { ExperienceEntry } from "@/types";
+
+export const experiences: ExperienceEntry[] = [
+  {
+    id: "multisys",
+    company: "Multisys Solutions Corporation",
+    role: "Frontend Developer",
+    dateRange: "June 2024 — Present",
+    location: "Parañaque City",
+    type: "work",
+    bullets: [
+      "Developing and maintaining government-facing web applications using React and Next.js",
+      "Building responsive, accessible UI components following WCAG 2.1 standards",
+      "Collaborating with cross-functional teams including backend developers and UX designers",
+      "Implementing performance optimizations and code splitting for faster page loads",
+      "Contributing to design system adoption and component library standardization",
+    ],
+  },
+  {
+    id: "lightweight",
+    company: "Lightweight Technology Solutions",
+    role: "Frontend Developer",
+    dateRange: "August 2022 — June 2024",
+    location: "Commonwealth, Quezon City",
+    type: "work",
+    bullets: [
+      "Built and maintained custom client-based and R&D systems using Next.js",
+      "Translated wireframes into fully functional frontend interfaces and integrated backend APIs",
+      "Implemented server-side rendering (SSR) with Next.js, achieving Lighthouse SEO scores of 90–100",
+      "Designed and developed mobile-responsive features for improved user experience",
+      "Created reusable React components using HOC patterns to streamline logic and reduce redundancy",
+      "Collaborated with backend developers and designers to enhance system usability and performance",
+    ],
+  },
+  {
+    id: "optimind",
+    company: "Optimind Technology Solutions",
+    role: "Frontend Developer",
+    dateRange: "October 2021 — August 2022",
+    location: "Marikina City",
+    type: "work",
+    bullets: [
+      "Converted PSD designs into responsive HTML layouts using SASS",
+      "Integrated HTML into custom WordPress themes and templates",
+      "Used Advanced Custom Fields Pro to create flexible, client-editable content areas",
+      "Developed custom WordPress themes and plugins to meet project requirements",
+      "Built and styled frontend components for modern, user-friendly branded microsites for The Economist",
+      "Performed regular WordPress deployments, backups, and performance maintenance",
+    ],
+  },
+  {
+    id: "magis",
+    company: "Magis Solutions",
+    role: "Frontend Developer (Part-time)",
+    dateRange: "May 2021 — October 2021",
+    location: "Remote",
+    type: "work",
+    bullets: [
+      "First role in the industry as a part-time frontend developer",
+      "Converted existing website designs into responsive layouts using Tailwind CSS",
+      "Developed and maintained frontend components for web applications",
+      "Designed and implemented mobile-friendly features to enhance user experience",
+    ],
+  },
+  {
+    id: "cvsu",
+    company: "Cavite State University — Carmona Campus",
+    role: "Bachelor of Science in Information Technology",
+    dateRange: "2015 — 2022",
+    location: "Carmona, Cavite",
+    type: "education",
+    bullets: [
+      "Graduated with a BS in Information Technology",
+      "Coursework in software engineering, web development, database systems, and algorithms",
+      "Capstone project focused on web-based systems development",
+    ],
+  },
+];
